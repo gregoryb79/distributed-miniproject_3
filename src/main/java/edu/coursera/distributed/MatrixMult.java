@@ -66,7 +66,7 @@ public class MatrixMult {
         mpi.MPI_Bcast(b.getValues(),0, b.getNRows() * b.getNCols(),0,mpi.MPI_COMM_WORLD);
 
 
-        for (int i = 0; i < c.getNRows(); i++) {
+        for (int i = startRow; i < endRow; i++) {
             for (int j = 0; j < c.getNCols(); j++) {
                 c.set(i, j, 0.0);
 
