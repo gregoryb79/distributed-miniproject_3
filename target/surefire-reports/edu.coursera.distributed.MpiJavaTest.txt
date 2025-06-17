@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: edu.coursera.distributed.MpiJavaTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.394 s <<< FAILURE! -- in edu.coursera.distributed.MpiJavaTest
+edu.coursera.distributed.MpiJavaTest$1.edu.coursera.distributed.MpiJavaTest -- Time elapsed: 0.384 s <<< ERROR!
+java.lang.UnsatisfiedLinkError: Unable to load library 'mpi': Native library (win32-x86-64/mpi.dll) not found in resource path ([file:/C:/Users/grego/AppData/Local/Temp/surefire5597855709331521716/surefirebooter-20250617152604871_3.jar])
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:277)
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:403)
+	at com.sun.jna.Library$Handler.<init>(Library.java:147)
+	at com.sun.jna.Native.loadLibrary(Native.java:502)
+	at com.sun.jna.Native.loadLibrary(Native.java:481)
+	at edu.coursera.distributed.util.MPI$MPILib.<clinit>(MPI.java:20)
+	at edu.coursera.distributed.util.MPI.<init>(MPI.java:77)
+	at edu.coursera.distributed.MpiJavaTest$1.setUp(MpiJavaTest.java:66)
+	at junit.extensions.TestSetup$1.protect(TestSetup.java:22)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.extensions.TestSetup.run(TestSetup.java:27)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:90)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
